@@ -51,6 +51,8 @@ class CowinDashboard extends Component {
       vaccinationByGenderData,
     } = this.state
 
+    console.log(vaccinationCoverageData)
+
     return (
       <div>
         <VaccinationCoverage

@@ -4,7 +4,7 @@ import './index.css'
 import {PieChart, Pie, Legend, Cell} from 'recharts'
 
 const VaccinationByAge = props => {
-  const vaccinationByAgeData = props
+  const {vaccinationByAgeData} = props
 
   return (
     <div className="chart-background">
@@ -16,7 +16,7 @@ const VaccinationByAge = props => {
           data={vaccinationByAgeData}
           startAngle={0}
           endAngle={360}
-          outerRadius="70%"
+          outerRadius="60%"
           dataKey="count"
         >
           <Cell name="18-44" fill="#2d87bb" />

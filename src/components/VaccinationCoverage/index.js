@@ -6,7 +6,7 @@ import {BarChart, Bar, XAxis, YAxis, Legend} from 'recharts'
 const VaccinationCoverage = props => {
   const {vaccinationCoverageData} = props
 
-  const DataFormatter = number => `${(number * 10).toString()}k`
+  const DataFormatter = number => `${(number * 50).toString()}k`
 
   return (
     <div className="chart-background">
@@ -31,9 +31,15 @@ const VaccinationCoverage = props => {
           name="Dose 1"
           fill="#5a8dee"
           barSize="10%"
-          cornerRadius={40}
+          radius={[10, 10, 0, 0]}
         />
-        <Bar dataKey="dose_2" name="Dose 2" fill="#f54394" barSize="10%" />
+        <Bar
+          dataKey="dose_2"
+          name="Dose 2"
+          fill="#f54394"
+          barSize="10%"
+          radius={[10, 10, 0, 0]}
+        />
       </BarChart>
     </div>
   )
