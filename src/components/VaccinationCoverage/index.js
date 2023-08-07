@@ -38,7 +38,7 @@ const VaccinationCoverage = props => {
           name="Dose 2"
           fill="#f54394"
           barSize="10%"
-          radius={[10, 10, 0, 0]}
+          radius={[5, 5, 0, 0]}
         />
       </BarChart>
     </div>

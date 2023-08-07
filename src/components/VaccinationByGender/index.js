@@ -24,7 +24,15 @@ const VaccinationByGender = props => {
           <Cell name="Female" fill="#5a8dee" />
           <Cell name="Others" fill="#2cc6c6" />
         </Pie>
-        <Legend iconType="circle" wrapperStyle={{margin: [20, 0, 0, 0]}} />
+        <Legend
+          iconType="circle"
+          layout="horizontal"
+          align="center"
+          wrapperStyle={
+            ({margin: {top: 20, right: 20, bottom: 20, left: 20}},
+            {borderColor: '#ffffff'})
+          }
+        />
       </PieChart>
     </div>
   )
